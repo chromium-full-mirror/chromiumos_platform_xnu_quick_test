@@ -1,0 +1,20 @@
+URL: http://opensource.apple.com/
+Version: 1699.26.8
+License: APSL 2.0, BSD
+License File: APPLE_LICENSE
+
+Description:
+
+xnu_quick_test is a build product of the xnu source in the subdirectory
+tools/tests/xnu_quick_test.  It provides kernel interface functional
+regression testing relative to kernel interfaces commonly used by other
+software in order to implement functionality.  This is intended to allow
+for brevity, while hitting as many common interfaces as possible.  A
+regrssion generally means that userspace software will experience some
+functional regression.
+
+There are a number of patches which are automatically applied to disable
+functional tests which are not applicable to Linux/Chromium OS systems.
+The patches are applied against a raw image as part of the build process.
+
+The regression test is intended to be run from the autotest framework.
